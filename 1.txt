@@ -1,0 +1,12 @@
+shell - interface to th linux system.
+      - gathers inputs from you and executes programs based on that input.
+      -environment that we can run our commands, programs, and shell script.
+      - types - bourne shell
+              - c shell
+      -it has:
+             1) comments preceded by # sign.
+             2) 
+scrip - collection of related linux commands that gears  to solve a problem.
+      - 
+shell script - 
+

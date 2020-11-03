@@ -1,0 +1,15 @@
+Introduction
+---------------
+Operating system- software that run on computing device.
+                - manages the hardware and software components that make up a functional computing system.
+                -Shedule programsto run in multi-tasking manner(shares the processor so that multiple tasks can occur apperently sumultanously)
+                - provide standard services that allows users and programs to request something happen(printing job)
+                - major operating systems:
+                                        microsoft windows
+                                        apple macOS
+                                        linux
+-Roles
+ --------
+1) productivity applications or web browser - desktop is best
+2)machine be accessed remotely by many users or provide services tto remote users - server
+

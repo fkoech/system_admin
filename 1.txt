@@ -10,3 +10,115 @@ scrip - collection of related linux commands that gears  to solve a problem.
       - 
 shell script - 
 
+
+
+chapter 2
+------------------
+->sum values held in a variable
+        #!/bin/bash
+       x=7
+       y=4
+     z= 9
+    result=$[ $x+$y+$z] 
+    echo $result
+
+
+->simple arithmetics 
+   #!bin/bash
+   #dominic
+  salary= 3000
+  allowance = 20
+result=$[ $salary + $ salary *$allowance ]
+echo $result
+exit 0
+
+
+->Mixed arithmentics
+#!/bin/bash 
+#A script to do simple arithmetics
+x=4
+y=3
+z=2
+result=$[ $x+$y ] 
+echo $result
+result = $[ $x-$y ]
+echo $result
+result = $[$x /$y]
+echo $result
+result= $[ $x*$y ]
+echo $ result
+exit 0
+
+The bc command & Examples
+----------------------------------------
+->Arithmentics operations  are the most common  kind of programming language.
+->bc  command is provided by the oprating system fofr doing arithmetic calculations.
+->Used to evaluate arithmentic expression.
+
+->arithmetics bc examples 
+ echo "3+4" | bc
+echo "2232*2322" | bc
+
+->When you divide two numbers, the bc command ignores the  decimal part and returns only the decimal part and return only the integral part as the output
+  echo "2/3" | bc
+->Use the scale function to specify the number of decimal digits that the bc commansd should  return 
+     echo "scale = 3; 2/7"  | bc
+->finding the remainder using modules operator: 
+       echo 4percentage3 | bc
+
+
+Assignment Operator Example
+-------------------------------------------
+->Assignment operators are used to assign a value to the vaiable.
+  ->Assigns  10 to the variable  and prints the value on the terminal.
+       echo "var=10; var"  | bc
+  ->increment the value ofthe variable  by 4
+     echo "var=10; var+=4; var | bc
+->List of asignments operators
+       var = values  i.e x=4
+       var+=value  similar to var=var+value  e.g x+=4 , x=x+4
+       var*=value e.g x*=4
+        var/=value e.g x/=4
+      var-=value e.g 
+
+Incremental operator 
+---------------------------------
+->They are of two type 
+                      Pre increment ++var   - the variable is increment first and the result ofthe variaable is used.
+                    post increment var++  - the result of the variable is used first and then the variable is incremented.
+
+important points 
+----------------------
+->BC command treat the semicolon(;) or newline as the statement separator.
+->to group statements use the curly braces.Use with functions, if statement, for and while loop
+->If  only an expression is specified as statement, then  bc command evaluates the expression and prints the result on the standard output.
+->If  an assignment  operator is found. BC command assigns the value of the variable and do not print the value  on the terminal.
+->A function should be defined before calling it. Always the function definition should  appear first before the calling statements.
+->If  a standalone variable is found as a statement, bc  command prints the value of the variable. You can also use  the print statement for displaying the list of  values  on the terminal.
+
+Variable Types
+----------------------
+->Shell run three type of variables:
+        1)Local variable - Variable present within the current  instance of the  shell.
+                                          -It is not available to programs that are started by the shell.
+                                          - They are set at the command  shell.
+      2) Environment variables - Is  available to any child process of the  shell.
+                                                          - Some programs need environment  variables in order to function correct. 
+                                                         - Usually, a shell script defines it
+3)Shell variables  -   Special variables
+                                   -  Set by the shell and is required  by the shell in order to function correctly.
+                                   -  some of them are enviroment  while others are local variables.
+ 
+Special variables 
+-----------------------------
+->Using nonalphanumerical characters in variables names need cautous, because those characters are used in the names of special unix variables and these variables are reserved for specific functions.
+->$ -character represents the process  ID number, or PID of the current shell  - $echo $$
+->$0 -the filename of the current script
+->$n -  the variables correspond to the arguments with  which a script was invoked.
+             n is the positive  decumal number corrending to the position of the argument.
+             The first argument is $1, the second argument is $2 and so on.
+->$# - the number of  arguments   supplied to a scipt.
+->$* -  All the  arguments are double quoted
+             if  a script receives two arguments,
+             $* is equivsalent to $1$2
+

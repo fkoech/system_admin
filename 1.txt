@@ -122,3 +122,196 @@ Special variables
              if  a script receives two arguments,
              $* is equivsalent to $1$2
 
+
+
+Netacad
+-----------------
+->Qualification for linux exprerience:
+                          configuring systems
+                          running web server
+ ->Fields rooted to linux
+                       -Cybersecurity
+                       -Application and Game development
+                       -Networking 
+                       -Big data
+                       -artifical intelligence
+ ->Linux means the karnel of the system, which is the central controller of everything that happens on the computer.
+ ->GNU/linux defines the operating system.
+ ->GNU is  a free software  that provides open source equivalent of many common UNIX commands.
+ ->Linux kernel -is the core of the operating system.
+                 loaded at boot time and stays running to manage every aspect of the functioning system.
+                 Decide  which program gets which block of memory.
+                 It starts and kills applications
+                 Handles displaying text or graphics on a monitor
+ ->UNIX - operating system
+          developed at AT&T Bell lab in 1970
+          Written in C language
+          owned by an industry consortium called open Group
+->linux - most software has been issued under a closed-source license
+          meaning that they get the right to use the machine code but cannot see  the source code.
+          It is an open source code(you can obtain the software source code and to modify modify it for your own use)
+->Difference between distributions
+                      Visible difference is package manager
+                      file location to political philosophies
+->Types of interfaces
+                    -Graphical user interface(GUI)
+                         *applications present themselves in windows that can be resized and moved around.
+                         *there are menus and tools to help users navigate
+                         *its applications includes; web browser, graphical editing tools, email
+                   
+                   *Command Line Interface(CLI) - text-based interface to the computer.
+                   *relies primary on keyboard input..
+                   *Relay by typing commands rather than clicking on icons
+                   *Clicking icon - computer tells user what to do 
+                   *typing command - tells the computer what to do.
+Operating System - software tha runs on a computing device and manages the hardware and software components that make up a functional computing system.
+                 -Shedules programs to run in a multi-tasking manner(share processor so that multiple tasks can occur apparently simultaneously)
+                 -Provide standard services that allow user and programs to request  something  happen(ie printing job)
+                 -Accept the request and perform the function needed.
+                 -Used to describe whatever software is booted  and run on that device.
+                 -classified to:
+                              microsoft windows
+                              apple macOS
+                              linux
+                              
+Decision based on
+a)roles - 
+             1)Desktop 
+                       - Best for productivity applications or web browsering.
+                       -primarily run a GUI for the ease of the users
+             2)Server
+             
+                        -Provide services to remote users
+                        -Sit in a rack and share a keyboard and monitor with many other computers ,
+ 
+                        -Run as CLI
+                        
+b) function
+                -tries to answer;
+                 is there specific software  it needs to run, or specific functions it needs to run? will there be hundreds, even thousands of  these machines running at  the same time
+c)life cycle
+            *scripting programs allows virtual  machines to be created configured, deployed and removed from the network without the need for human intervention.
+            *Physical hardware upgrades has also been decreaed immensely with the advent of cloud services providers like
+                              Amazon web services
+                              microsoft azure
+                              Rackspace
+ d)stability
+            Beta - software release that have many new features that haven't been tested, 
+            Stable - software release that have many features that have been tested.
+            
+
+
+->Linux distribution - is a bundles of software, typically comprised of the linux  kernel utilities, management tools, and even some application software in a package which also includes the means to update core software and install additional applications.
+->Disctribution - takes care of setting up the storage, building the kernel and installing hardware drivers, as well as installing application and utilities to make  a fully functional computer system.
+->Distribution focus on
+                   -running application or web servers
+                   -Productivity desktops
+                   -point-of-sale systems
+                   -Tools dedicated to electronic designs
+->CLI- Is a text-based interface to the computer, where the user types in a command and computer the executes it.
+    -No window to move arround.
+    -Text editor, web browser, and emails clients are all presented in text format  only.
+->Terminal - CLI environment 
+             accept what the user types and pass to the shell.
+->shell - interprets what the user has typed into instructions that can be executed by the operating system.
+
+
+->Applications - make requests to the kernel and return receive resource, such as memory, cpu, and disk space.
+               - doesn't know if a block of disk storage is on a solid-state drive, a spinning metal  hard disk, or even a networking file share.
+               -follows  the kernel's applications  programing interface(API).
+               -Does not worr about the implementation details.
+->Kernel - Decides which one gets it, in some cases, kills off another application to save the rest of the system and prevent  a crash.
+
+        -Abstracts some complicated details away from the application.
+        -Maintains this illusion by remapping  smaller block of memory, sharing blocks of memory  with  other applications
+        -Takes care of running the process, starting and stopping them as requested and handling out system resource.
+        -swap out untouched blocks of disk.
+        -run a wide variety of software across many hardware platform.
+        -Handles the switching of applications, a process known as multitasking.
+        -Takes care of unloading one task and loading a new one if there is more demand than the resource available.
+        -Decides to switch focus between tasks.
+        -does not defferentiate between a user-facing aplication, a network service that talks to a remote computer, or an internal task.
+
+->Process - A one task that is loaded and tracked by the kernel.
+          -Multiple are required by application to function
+ ->A computer - can act as server(primarily handles data on others' behalf)
+              -can act as desktop(Users interacts with it directly)
+ ->linux software generally falls into one of three categories;
+          1)server applications
+               -No direct interaction with the monitors and keyboard of the machine it runs on.
+               -Serve information to other computers classed clients.
+               -May not talk to other computer but only sit there and crunch data.
+        2)Desktop applications
+               -web browsers, text editors, music players  with which users interact directly.
+        3)Tools
+             -Softwares that exist to make it easier to manage computer systems.
+             -Helps configure displays, provides linux shell thst users type commands  into, or  even more sophisticated tools, called  compilers, that converts source code to application program that the computer can execute.
+  
+Web servers - one of the early use of linux.
+              hosts content for web browser using HyperText transfer protocols or encrypted flavor(HTTPS).
+              -Web pages can be static or dynamic
+              -when th web browser request a static page, the web server send the file as it appear on disk.
+              -For dynamic site, the request is sent b the web server to an application, which generates the content.
+              -Wordpress can be used to develop content through their browser in the wordpress application and the software turns it into a fully functional dynamic website.
+              Apache - Dominant web server
+                      apache HTTPD is the daemon, or server application program, that serves web page request.
+            NGINX - a web server
+                    focuses on performance by making use of more modern UNIX  kernels
+                    Does  a subset of what apache can do.
+
+Private cloude servers
+---------------------------
+->Can be deployed and administered internally.
+->owncloud project - lauched in 2010
+                     provide software to store, sync and share data from private cloud server.
+->Nextcloud  project  - was forked from owncloud in 2016
+                      -Provided under a GNU AGNU aGPLv3 
+                      -aim for an open transparent development process
+->both met organisational requirement such as; security, privacy,  regulatory compliance.
+
+
+Database servers
+--------------------
+->Form the backbone of most online services.
+->Dynamic web application pull  data from and write data to these applications 
+->Example;
+         web program for trackinf online students ,
+         consist of a font-end server that presents a web form
+         when data is entered into the form, it is written to a database application(mariaDB)
+         Instructor access student information by using the web application to query  
+         the database and retrn the result through the web application.
+->MariaDB -is a community-developed fork of the MYSQL relational database management system.
+           ->One of the many  database servers used for web development 
+->A database stores information and also allows for easy retrieval and querying.
+->popuilar databases
+                 firebird
+                 postgresql
+ 
+ Email Servers
+ -----------------
+ ->Task required to get emails between people
+               1)Mail Transfer Agent(MTA)
+                 -used to transfer electronic messages to other systems 
+                 -the most well known MTA is sendmail.
+                 -postfix is another popular one and aims to be simpler and more secure than sendmail.
+                2)Mail Delivery Agent(MDA)
+                  -also local delivery agent.
+                  -Takes care of storing the email in the user's mailbox.
+                  -Usually invoked from the final MTA in the chain.
+                3)POP/IMAP server
+                   -post office protocol and internet message access protocol are two communication protocols that let an email client running on your computer talk to a remote server to pick up the email.
+               -Dovecot - popular POP/IMAP server owing to its ease of use and low maintenance.
+              -Cyrus IMAP - another POP/IMAP server.
+              -Some if the POP/IMAP servers implement their own mail database format for performance and include the MDA if the custom database is desired.
+
+File sharing
+--------------------
+->Samba - window-centric file sharing.
+          allows a linux machine to look and bahave like windows machine  so that it can share files and participate in a window  domain.
+          implements the server components, such as making files available for sharing and certain windows server role, and also the client end so that linux machine may consume a windows file share.
+Nettalk - let linux machine perform as an apple macintosh file server
+->The native file sharing protocol for UNIX/Linux is called the Network File System(NFS).
+->NFS is usually part of the kernel which means that a remote file system can be mounted(made accessible) just like a regular disk, making file access transparent to other applications.
+
+            
+                 

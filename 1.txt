@@ -314,4 +314,74 @@ Nettalk - let linux machine perform as an apple macintosh file server
 ->NFS is usually part of the kernel which means that a remote file system can be mounted(made accessible) just like a regular disk, making file access transparent to other applications.
 
             
-                 
+              Chapter3
+------------------------------------
+->Functions of a system admin
+        -Managing servers
+        -Assist users with conffiguration issues
+        -Recommend new softwares
+        -Update documentations 
+        -Download and install package packages
+        -Be aware of anyone who has used a pc or macintosh with icons to select different proggrams 
+        -Set applications to configure things like user accounts, wifi networks, and input devices.
+        
+        
+        Getting to the command line
+        -------------------------------
+->It is simple text input system for entering anything from single-word command to complicated script.
+->Provides a direct way to access  and control the computer.
+->On GUI boot systems, CLI can be accessed by:
+                    command line-a GUI based terminal 
+                    virtual terminal
+->GUI terminal - a program within the GUI environment that emulates a terminal window.
+->GUI terminals can be accessed through the menu system.
+           (Application->System tools ->Terminal)- for the case of CentOs machine.
+->Virtual terminal - can be run at the same time as a GUI but requires the user to log in via the virtual terminal before they can execute commands(As they would before accessing the GUI interface)
+->Linux desktop distribution is slightly different, but the application terminal or X-term will open a terminal window from the GUI.
+->Subtle difference between the terms console and terminal  window sessions.
+->They are all the same from the adminstrators standpoint and they require the same knowledge of command to use.
+->Ordinary command line tasks are:
+           Starting programs
+           Parsing script
+           Editing text files Used for system or application configuration
+->Most Servers boot directly to a terminal
+->GUI can be resource intensive and is generally not needed to perform server-based operations.
+
+
+
+Applications
+-----------------
+->Kernel of the operating system is like an air traffic controller at an airport, and 
+  the applications are  the airplanes under its control.
+  ->It decide which program gets which blocks of memory,
+  ->It starts and kills applications
+  ->It  handles displaying text or graphics on a monitor
+->Applications - make requests to the kernel and in return receives resource such as
+                      memory
+                      cpu
+                      disk space
+->If two applications request the same resource, the kernel decide which one gets it 
+->In some cases, kills off another application to save the rest of the system and prevent a crash.
+->Kernel also abstracts  some complicated details away from the application.
+->For example the application doesnt know if a block  of disk stroge is on a solid-state drive, a spinning metal or even a network file share.
+->Application need to follow the kernel's application  programming interface(API) and does not need to worry about the implementation details.
+->application behave as if it has a large block of memory on the system
+->Kernel maintains this illusion by remapping smaller block of memory, share the block  of memory with other applications, swapping untouched blocks to disk.
+->the kernel also handles the switching of application, the process known as multitasking.
+->A computer system has a small number of central processing units (CPUS) and finote amount of memory.
+->The kernel takes care of unloading one task and loading one task and loading new one  if there is more demand than resource  available.
+->When one task as run for a specified amount of time, the cpu pause it so that another may run.
+->If computer  is doing several tasks at once, the kernel so deciding when to switch  focus between task.
+->With the tasks rapidly switching, it appears that the computer is doing many thins at once.
+->Kernel doesnt know the word processor, web browser, email, user-facing application, network service  that talks to a remote computer or an internal task
+->From that we get the abstraction called process.
+->A process is one task that is loaded  and tracked by the kernel.
+->An application may even need multple processes to functions, 
+-> the Kernel takes care of running processes, start and stops them as requested, and 
+handing out system resource.
+
+
+
+Major applications 
+-----------------------
+->

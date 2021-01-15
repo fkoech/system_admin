@@ -1,0 +1,31 @@
+Agenda
+----------
+1. Create users
+2.add users to specific group
+3.
+
+
+Introduction
+------------
+1.sudo - excute command as a diffent user
+2.su - utility that request appropriate user 
+       credentials via PAM and switches to that use id
+3.useradd - create new user.
+4.userdel - delete a user account.
+5.usermod - modifies user account.
+6.addgroup - adds a group to the system.
+7.delgroup - remove group from the system.
+8.passwd -change user password
+-> to find the command useradd in your terminal excute the command :
+              file `which useradd`
+->to show users and their primary groups you excute the command :
+              getent passw usename
+->to add user with a specific userid execute the command:
+           getent -u
+ ->useradd command option that create a home directory for the use
+            useradd -m 
+ ->to create a home directory on different directory:
+                 useradd -m -d /opt/felix felix
+ ->to create a user with a expiry date :
+          useradd -e dateToExpire  useradded
+                 

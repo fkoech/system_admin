@@ -1,0 +1,35 @@
+-Agenda 
+--------------
+1.system structure
+2.system process
+3.network configuration
+4.users
+5.directories
+6.user settings 
+
+
+Necessary tools
+--------------------
+1.whoami - current user.
+2.id - users id
+3.hostname - name of the current host
+4.uname - os name
+5.pwd - return working directory name.
+6.ifconfig - assign, view and configure network interface.
+7.ip - shows or manipulate routing, network devices, interfaces and tunnel.
+8.netstat - show network status.
+9.ss - utility that investigate the socket
+10.ps - show process status
+11.who - display who logged in.
+12.env - print environment
+         sets and execute command.
+13.lsblk - lists block devices
+14.lsusb - list usb devices
+15.lsof - list open files
+16.lspci - lists pci devices
+
+htb-student 
+HTB_@cademy_stdnt!
+10.129.124.191
+4.15.0-123-generic
+htb-student@nixfund:/$

@@ -1,0 +1,36 @@
+-Package - are archives that contain binaries of software, configuration files, information 
+about dependencies and keep track of updates and upgrades.
+-
+
+Package management systems
+-------------------------------
+-package downloading
+-dependancy resolution
+-a standard binary package format
+-common installation and configuration locations
+-additional system-related configuration and functionality
+-Quality control.
+
+-Packages covers different types of files such as: ".deb", ".rpm"
+
+
+List of package management programs
+-------------------------------------
+-dpkg - a tool to install, build, remove and manage debian packages.
+        aptitude - is a primary and more user friendly front-end dpkg.
+-apt - provides a high level  command-line interface for the package management system.
+-aptitude - alternative of apt.
+-snap - install, configure, refresh, and remove snap packages.
+        enables  the secure distribution of the latest apps and utilities 
+        for the cloud, server ,desktop, and other internet of things.
+-gem - the front-end to RubyGemes, the stand package manager for Ruby.
+-pip - python package installer
+       install python packages that are not available in the Debian archive.
+       It can work with version control repositories(currrent only Git, Mercurial, and Bazaar 
+       repositories)
+       loga output extensively and prevents partial installa by downloading 
+       all requirement before  starting installation.
+git - fast, scalable, distributed revision control system with an unusually rich command 
+     set that provides both high level  operations and full access to internals.
+     
+       
